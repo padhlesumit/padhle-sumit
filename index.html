@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padhle Sumit</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- Home Page -->
+<div class="header">
+    <div class="search-bar">
+        <input type="text" placeholder="Search content...">
+    </div>
+    <img src="logo.png" alt="Logo" class="logo">
+</div>
+
+<div class="content">
+    <div class="free-content" onclick="redirectToFreeContent()">
+        <h2>Free Content</h2>
+        <span>&#8594;</span>
+    </div>
+
+    <div class="images-container">
+        <img src="image1.jpg" alt="Content 1">
+        <img src="image2.jpg" alt="Content 2">
+        <img src="image3.jpg" alt="Content 3">
+        <img src="image4.jpg" alt="Content 4">
+    </div>
+</div>
+
+<!-- Video Page -->
+<div id="video-page" class="content" style="display: none;">
+    <div class="video-page">
+        <div class="video-item" onclick="playVideo('videos/vadapa.mp4')">
+            <img src="thumbnail1.jpg" alt="Video 1">
+            <p>Learn JavaScript Basics</p>
+        </div>
+        <div class="video-item" onclick="playVideo('videos/another_video.mp4')">
+            <img src="thumbnail2.jpg" alt="Video 2">
+            <p>Understanding CSS Styling</p>
+        </div>
+        <div class="video-item" onclick="playVideo('videos/example_video.mp4')">
+            <img src="thumbnail3.jpg" alt="Video 3">
+            <p>HTML for Beginners</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Video Settings Page -->
+<div id="video-settings" class="content" style="display: none;">
+    <video class="video-player" controls>
+        <source src="" id="video-source" type="video/mp4">
+    </video>
+    <div>
+        <h3>Padhle Sumit</h3>
+        <ul>
+            <li>Picture in Picture Mode</li>
+            <li>Background Mode</li>
+            <li>Video Quality</li>
+            <li>Speed</li>
+        </ul>
+    </div>
+    <div class="chat">
+        <p>Chat Section (visible to everyone)</p>
+    </div>
+</div>
+
+</body>
+</html>
